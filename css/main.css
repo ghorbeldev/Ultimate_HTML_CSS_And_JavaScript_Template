@@ -981,7 +981,8 @@ a {
 	left: 0;
 	background-color: var(--main-color);
 	height: 100%;
-	width: calc(1% * var(--skill-progress));
+	width: 1px;
+	transition: all 0.5s;
 }
 .how-it-works {
 	padding-top: var(--main-padding);

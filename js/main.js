@@ -1,7 +1,7 @@
 let otherLinks = document.querySelector('.other-links');
+let skills = document.querySelectorAll('.skills .progress');
 
 document.onmouseover = e => {
-	console.log(e.target);
 	if (otherLinks.contains(e.target)) {
 		!otherLinks.classList.contains('show') && otherLinks.classList.add('show');
 	} else {
@@ -16,10 +16,18 @@ document.onclick = e => {
 };
 const scrollUp = 'scroll-up';
 const scrollDown = 'scroll-down';
+let currentScroll = window.pageYOffset;
 let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
-	const currentScroll = window.pageYOffset;
+	currentScroll = window.pageYOffset;
+	skills.forEach(skill => {
+		if (currentScroll + 250 > skill.offsetTop) {
+			skillStyle = getComputedStyle(skill);
+			progressWidth = skillStyle.getPropertyValue('--skill-progress');
+			skill.children[0].style.width = progressWidth + '%';
+		}
+	});
 	if (currentScroll <= 0) {
 		document.body.classList.remove(scrollUp);
 		return;
