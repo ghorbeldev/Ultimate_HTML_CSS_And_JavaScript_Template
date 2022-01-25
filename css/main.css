@@ -63,14 +63,16 @@ a {
 	background-color: var(--main-color-alt);
 	z-index: -1;
 }
-@media (max-wdith: 576px) {
+@media (max-width: 576px) {
 	.special-heading {
+		font-size: 1.8rem;
+		padding: 0.5rem 1rem;
 	}
 	.special-heading::after {
-		left: -25px;
+		right: -40px;
 	}
 	.special-heading::before {
-		right: -25px;
+		left: -40px;
 	}
 }
 .special-heading:hover {
