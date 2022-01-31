@@ -236,6 +236,7 @@ a {
 	border-bottom: 3px solid var(--main-color);
 	transition: all 0.3s;
 	z-index: -1;
+	width: 100%;
 }
 .other-links-container .img-container {
 	width: 40%;
