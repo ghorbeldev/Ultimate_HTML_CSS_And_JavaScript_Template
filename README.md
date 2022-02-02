@@ -10,6 +10,6 @@ A Template Using HTML5, CSS3 and JavaScript...
 
 ### Template Screenshot
 
-[TEMPLATE DEMO](https://ghorbeldev.github.io/Ultimate_HTML_CSS_And_JavaScript_Template/)
+[TEMPLATE DEMO](https://ghorbeldev.github.io/ultimate-template/)
 
 ![WEBSITE PREVIEW](./template-3.png)
